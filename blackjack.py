@@ -177,7 +177,7 @@ def hit_or_stand(deck, hand):
     global playing  # to control an upcoming while loop
 
     while True:
-        x = input(f"{player_name}, Would you like to Hit or Stand? Enter 'Hit' or 'Stand' ").lower()
+        x = input(f"{player_name}, Would you like to Hit or Stand? Enter 'h' or 's' ").lower()
 
         if x.startswith('h'):
             hit(deck, hand)  # hit() function defined above
@@ -185,11 +185,11 @@ def hit_or_stand(deck, hand):
 
         elif x.startswith('s'):
             print('\n')
-            print(f"{player_name} stands. Dealer is playing.")
+            print(f"{player_name} stands. Dealer is playing. ")
             playing = False
 
         else:
-            print("Sorry, please try again.")
+            print("Sorry, please try again, 'h' or 's' ")
             continue
         break
 
