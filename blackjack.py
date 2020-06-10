@@ -85,6 +85,7 @@ class Deck:
 
     def deal(self):
         self.single_card = random.choice(self.new_deck)
+        self.new_deck.remove(self.single_card) # to make sure card is not repeated
         return self.single_card
 
 
