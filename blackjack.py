@@ -121,7 +121,7 @@ class OnHand:
 
     def adjust_ace(self):
         # Adjusting ACE situation
-        if self.value > 21 and self.aces:
+        if self.value > 21 and self.aces: # we can use as well "self.aces > 0"
             self.value -= 10
             self.aces -= 1
 
